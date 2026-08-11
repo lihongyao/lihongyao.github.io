@@ -1,83 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>音频合成</title>
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="theme-color" content="#1E2328" />
+    <title>Agent Center</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script type="module" crossorigin src="/assets/index-bfBTXghk.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-CNC7AqOf.js">
+    <link rel="modulepreload" crossorigin href="/assets/jsx-runtime-BhxXKzgZ.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-dom-CUAsTrjY.js">
+    <link rel="modulepreload" crossorigin href="/assets/navigation-CtGdX0xR.js">
+    <link rel="modulepreload" crossorigin href="/assets/Message-9mIRFGeJ.js">
+    <link rel="modulepreload" crossorigin href="/assets/image-BSzOKUOK.js">
+    <link rel="modulepreload" crossorigin href="/assets/utils-DlJU8QGu.js">
+    <link rel="modulepreload" crossorigin href="/assets/MainButton-DaDDK5es.js">
+    <link rel="modulepreload" crossorigin href="/assets/Input-DGaEr8CM.js">
+    <link rel="modulepreload" crossorigin href="/assets/LiveSupportButton-BU8ICbwE.js">
+    <link rel="modulepreload" crossorigin href="/assets/Popup-Dnl3YYLs.js">
+    <link rel="modulepreload" crossorigin href="/assets/DataPicker-BAX4W60V.js">
+    <link rel="modulepreload" crossorigin href="/assets/is-ref-object-BOGl5S86.js">
+    <link rel="modulepreload" crossorigin href="/assets/Loading-Ckp1DGi7.js">
+    <link rel="modulepreload" crossorigin href="/assets/use-presence-sYJ_diYu.js">
+    <link rel="modulepreload" crossorigin href="/assets/IconButton-D0LhKAix.js">
+    <link rel="modulepreload" crossorigin href="/assets/paths-COR5UM71.js">
+    <link rel="modulepreload" crossorigin href="/assets/Avatar-DJKduzIH.js">
+    <link rel="modulepreload" crossorigin href="/assets/dist-f0DOvmYy.js">
+    <link rel="modulepreload" crossorigin href="/assets/Card-DzlJdF_V.js">
+    <link rel="modulepreload" crossorigin href="/assets/StatusTag-Ci71enaT.js">
+    <link rel="modulepreload" crossorigin href="/assets/WarningTips-TntoIGkj.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-0DaqxPww.css">
   </head>
   <body>
-    <h1>音频处理</h1>
-    <main>
-      <!-- 拼接 -->
-      <div class="group">
-        <div class="row">
-          <div class="label">音源 1</div>
-          <audio src="./assets/1.wav" controls />
-        </div>
-        <div class="row">
-          <div class="label">音源 2</div>
-          <audio src="./assets/2.wav" controls />
-        </div>
-        <div class="footer">
-          <div class="button" onclick="concat()">拼接</div>
-          <div id="concat"></div>
-        </div>
-      </div>
-      <!-- 合成 -->
-      <div class="group">
-        <div class="row">
-          <div class="label">音源 1</div>
-          <audio src="./assets/bg1.wav" controls />
-        </div>
-        <div class="row">
-          <div class="label">音源 2</div>
-          <audio src="./assets/bg2.wav" controls />
-        </div>
-        <div class="footer">
-          <div class="button" onclick="merge()">合成</div>
-          <div id="merge"></div>
-        </div>
-      </div>
-
-      <!-- 插入音效 -->
-      <div class="group">
-        <div class="row">
-          <div class="label">音源 1</div>
-          <audio src="./assets/bg2.wav" controls />
-        </div>
-        <div class="row">
-          <div class="label">音源 2</div>
-          <audio src="./assets/Hit.ogg" controls />
-        </div>
-        <div class="footer">
-          <div class="button" onclick="insert()">插入音效</div>
-          <div id="insert"></div>
-        </div>
-      </div>
-
-      <!-- 截取 -->
-      <div class="group">
-        <div class="row">
-          <div class="label">音源 1</div>
-          <audio src="./assets/viper.mp3" controls />
-        </div>
-        <div class="footer">
-          <div class="button" onclick="slice()">截取</div>
-          <div id="slice"></div>
-        </div>
-      </div>
-
-      <div class="group">
-        <div class="buttons">
-          <div class="button" onclick="mergeNotes()">音符音效</div>
-        </div>
-        <div id="result"></div>
-      </div>
-    </main>
-
-    <script src="./js/audioUtils.js"></script>
-    <script src="./js/utils.js"></script>
-    <script src="./js/index.js"></script>
+    <div id="root"></div>
+    <!-- 模块加载 -->
   </body>
 </html>

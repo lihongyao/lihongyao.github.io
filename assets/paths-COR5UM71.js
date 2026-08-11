@@ -1,0 +1,1 @@
+var e={Home:`/`,Promotion:`/promotion`,Users:`/users`,Commission:`/commission`},t={Account:`/account`,Apply:`/apply`,CommissionRules:`/commission-rules`,GameAccounts:`/game-accounts`,Withdraw:`/withdraw`,WithdrawalRecords:`/withdrawal-records`,WithdrawalRecordDetail:`/withdrawal-records/:id`},n={...e,...t};function r(e){return e.slice(1)}export{r as i,n,e as r,t};

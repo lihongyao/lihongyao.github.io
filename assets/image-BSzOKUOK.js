@@ -1,0 +1,1 @@
+function e(e){return`/images/10401/${e}`}export{e as t};
